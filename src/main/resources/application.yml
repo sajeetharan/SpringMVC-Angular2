@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: production
+---
+logging:
+  level:
+       org.springframework.web: debug
+       org.springframework.controllers: debug
+       com.school.dao: debug
+       com.school.controller: info
+
+
+---
+server:
+  port: 8080

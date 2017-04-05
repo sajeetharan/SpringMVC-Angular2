@@ -1,0 +1,50 @@
+{
+  "name": "frontend",
+  "version": "0.0.1",
+  "description": "Front end application",
+  "author": "Sankar",
+  "scripts": {
+    "start": "concurrently --kill-others \"gulp watch\" \"lite-server\"",
+    "typings": "typings",
+    "postinstall":"typings install",
+    "test": "tsc && concurrently \"tsc -w\" \"karma start karma.conf.js\"",
+    "tsc": "tsc",
+    "build": "gulp build"
+  },
+  "dependencies": {
+    "@angular/core": "^4.0.1",
+    "@angular/compiler": "^4.0.1",
+    "@angular/common": "^4.0.1",
+    "@angular/platform-browser": "^4.0.1",
+    "@angular/platform-browser-dynamic": "^4.0.1",
+    "@angular/router": "^4.0.1",
+    "@angular/http": "^4.0.1",
+    "@angular/forms": "^4.0.1",
+    "@angular/material": "^2.0.0-beta.2",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.10",
+    "moment-js": "^1.1.15",
+    "zone.js": "^0.8.5",
+    "rxjs": "^5.3.0",
+    "systemjs": "^0.20.11",
+    "ng2-bootstrap": "^1.6.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0",
+    "typescript": "^2.2.2",
+    "typings": "^2.1.0",
+    "@angular/compiler-cli": "^4.0.1",
+    "concurrently": "^3.4.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.5.1",
+    "gulp-typescript": "^3.1.6",
+    "tslint": "^5.0.0",
+    "gulp-tslint": "^7.1.0",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-htmlfile-reporter": "^0.3.5",
+    "jasmine-core": "^2.5.2",
+    "karma-jasmine": "^1.1.0"
+  }
+}

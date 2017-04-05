@@ -1,0 +1,7 @@
+{
+  "port": 8005,
+  "files": ["./build/**/*.{html,htm,css,js}"],
+  "server": { "baseDir": "./build" },
+  "browser": ["chrome"],
+  "open": false
+}

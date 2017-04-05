@@ -1,0 +1,12 @@
+
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+target/
+frontend/build/
+frontend/node_modules/
+frontend/typings/
+.DS_Store
